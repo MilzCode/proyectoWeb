@@ -1,0 +1,97 @@
+body{
+    font-family: 'Lato', sans-serif;
+    font-size: 1.6rem; /* 1 rem es 10 px en una pantalla normal */
+}
+
+/** Globales **/
+.contenedor{
+    max-width: 120rem; /*ancho de la imagen es a lo más 1200px */
+    margin: 0 auto 0 auto; /* valores: arriba, derecha, abajo, izquierda */
+}
+
+h1{
+    font-size: 3.8rem;
+}
+h2{
+    font-size: 3.4rem;
+}
+h3{
+    font-size: 3rem;
+}
+h4{
+    font-size: 2.6rem;
+}
+/** Globales **/
+
+/** Utilidades **/
+.seccion{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+/** Utilidades **/
+
+.site-header.inicio{
+    background: url(../img/header.jpg); /* deja como fondo la imagen o color */
+    background-position: center center; /* sirve para hacer que la imagen se cargue desde una 
+                                        posición. Valores: (arrriba/abajo) y (izquierda/derecha) */
+    background-size: cover; /* hace que la imagen cubra todo el espacio del contenedor */
+    height: 100vh; /* alto de la imagen es 100% de la pantalla */
+    min-height: 60rem; /* alto mínimo de la imagen es 600px */
+}
+
+.contenido-header{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* deja los items al inicio del contenedor */
+}
+.contenido-header h1{
+    color:  white;
+    padding-bottom: 2rem;
+    max-width: 70rem;
+    line-height: 2; /* line-height es el tamaño del interlineado */
+}
+.barra{
+    display: flex;
+    justify-content: space-between;
+    /* justify-content: space-around; hace que los elementos dejen un espacio más grande al 
+    rededor del centro que al rededor de ellos y el margen*/
+    /* justify-content: space-evenly; deja un espacio igual entre los elementos y el margen */
+    /* justify-content: space-between; deja un espacio igual entre los elemtentos sin considerar 
+    el margen */
+    padding-top: 3rem; /* separación entre elementos del contenedor */
+    /* margin-top: 30px; separación entre un elemento y el contenedor */
+    align-content: center; /* hace que los elementos más pequeños queden a la altura del centro
+                            de los elementos más grandes */
+    flex-direction: row;
+    /* si flex-direction: row; , entonces justify-content sirve para modificar 
+    los espacios entre los item horizontalmente */
+    /* si flex-direction: column; , entonces justify-content sirve para modificar 
+    los espacios entre los item verticalmente */
+    /* si flex-direction: row; , align-content sirve para modificar los espacios 
+    entre los item verticalmente */
+    /* si flex-direction: column; , align-content sirve para modificar los espacios 
+    entre los item horizontalmente */
+
+}
+
+.navegacion a{
+    color: white; /* hace que el texto sea blanco */
+    /* color: #ffffff; es el color blanco pero es sacado de un colorpicker */
+    /* color: rgba(255,255,255,1); es el color blanco con transparencia 1 (va entre 1 a 0 donde
+    0 es completamente transparente) */
+    text-decoration: none; /* quita las lineas que se ponen a un texto cuando es link */
+    font-size: 1.8rem; /* fija el tamaño de letra del texto a 18 px */
+    margin-right: 2rem; /* deja un margen de 20 px a la derecha de cada elemento en 
+                        el contenedor*/
+}
+.navegacion a:last-of-type{ /*selecciona el último elemento entre los elementos a del contenedor 
+                            de clase navegación */
+    margin-right: 0px; /* tiene un margen de 0 px a la derecha*/
+}
+.navegacion a:hover{ /* selecciona los elementos que tienen al mouse por encima */
+    color: greenyellow;
+}
+/* .navegacion a:first-of-type{ selecciona al primer elemento entre los elementos a del contenedor
+de clase navegación
+} */
